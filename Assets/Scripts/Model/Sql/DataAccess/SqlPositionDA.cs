@@ -29,10 +29,17 @@ namespace Employees.Model.Sql.DataAccess
             cmd => { cmd.AddParameter("@id", id); }
         );
 
-        public void Add(Position entity) => NonQuery(
-            $"INSERT INTO {POSITION_TABLE}, {POSITION_NAME}) VALUES (@name)",
-            cmd => { cmd.AddParameter("@name", entity.Name); }
-        );
+        public void Add(Position entity)
+        {
+            if (entity.Id <= 0)
+            {
+                NonQuery(
+                    $"INSERT INTO {POSITION_TABLE} ({POSITION_NAME}) VALUES (@name)",
+                    cmd => { cmd.AddParameter("@name", entity.Name); }
+                );
+            }
+            else Update(entity);
+        } 
 
         public void Update(Position entity) => NonQuery(
             $"INSERT INTO {POSITION_TABLE} ({POSITION_ID}, {POSITION_NAME}) VALUES (@id, @name)" +
