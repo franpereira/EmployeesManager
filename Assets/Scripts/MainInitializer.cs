@@ -1,8 +1,12 @@
 using Employees.Model.DataAccess;
 using Employees.Model.Sql.DataAccess;
 using Employees.Presenters;
+using Employees.Presenters.Positions;
+using Employees.Presenters.Seniorities;
 using Employees.Services.Database;
 using Employees.UI;
+using Employees.UI.Positions;
+using Employees.UI.Seniorities;
 using UnityEngine;
 
 namespace Employees
@@ -13,8 +17,11 @@ namespace Employees
         [SerializeField] bool forceNewDatabase = false;
         
         [SerializeField] MainMenuUI mainMenuUI;
+        
         [SerializeField] PositionsUI positionsUI;
         [SerializeField] PositionEditorUI positionEditorUI;
+        
+        [SerializeField] SenioritiesUI senioritiesUI;
 
         void Awake()
         {
@@ -22,9 +29,13 @@ namespace Employees
             SqliteDatabase db = sqliteCreator.Create(databaseFilePath, forceNewDatabase);
             IDataRepository repository = new SqlDataRepository(db.NewConnection);
             
-            MainMenuPresenter mainMenuPresenter = new(mainMenuUI, positionsUI);
+            SenioritiesPresenter senioritiesPresenter = new(repository, senioritiesUI);
+            MainMenuPresenter mainMenuPresenter = new(mainMenuUI, positionsUI, senioritiesPresenter);
+            
             PositionEditorPresenter positionEditorPresenter = new(positionEditorUI, repository);
             PositionsPresenter positionsPresenter = new(repository, positionsUI, positionEditorPresenter);
+            
+            
         }
     }
 }

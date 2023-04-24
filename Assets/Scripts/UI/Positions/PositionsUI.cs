@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Employees.Model;
 using UnityEngine;
 
-namespace Employees.UI
+namespace Employees.UI.Positions
 {
     public class PositionsUI : MonoBehaviour, IPositionsUI
     {
@@ -14,7 +14,8 @@ namespace Employees.UI
         public event Action<int> EditPositionRequested;
         
         public void ShowUI() => gameObject.SetActive(true);
-        
+        public void HideUI() => gameObject.SetActive(false);
+
         public void OnEditPositionRequested(int id) => EditPositionRequested?.Invoke(id);
 
         public void LoadPositions(IEnumerable<Position> positions)

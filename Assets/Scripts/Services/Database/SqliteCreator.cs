@@ -72,6 +72,8 @@ namespace Employees.Services.Database
         void PopulateTables()
         {
             SqlPositionDA positionDA = new(_executor);
+            SqlSeniorityDA seniorityDA = new(_executor, positionDA);
+            SqlEmployeeDA employeeDA = new(_executor, seniorityDA);
 
             // Load positions from example csv:
             string positionsCsv = Resources.Load<TextAsset>("example_positions").text;
@@ -83,6 +85,39 @@ namespace Employees.Services.Database
                 {
                     Id = int.Parse(fields[0]),
                     Name = fields[1],
+                });
+            }
+            
+            // Seniorities:
+            string senioritiesCsv = Resources.Load<TextAsset>("example_seniorities").text;
+            lines = senioritiesCsv.Split('\n');
+            foreach (string line in lines)
+            {
+                string[] fields = line.Split(',');
+                seniorityDA.Add(new Seniority
+                {
+                    Id = int.Parse(fields[0]),
+                    Position = positionDA.Get(int.Parse(fields[1])),
+                    Name = fields[2],
+                    Ordinal = int.Parse(fields[3]),
+                    BaseSalary = float.Parse(fields[4]),
+                    PercentagePerIncrement = float.Parse(fields[5]),
+                    CurrentIncrements = int.Parse(fields[6]),
+                });
+            }
+
+            // Employees:
+            string employeesCsv = Resources.Load<TextAsset>("example_employees").text;
+            lines = employeesCsv.Split('\n');
+            foreach (string line in lines)
+            {
+                string[] fields = line.Split(',');
+                employeeDA.Add(new Employee
+                {
+                    Id = int.Parse(fields[0]),
+                    Seniority = seniorityDA.Get(int.Parse(fields[1])),
+                    FirstName = fields[2],
+                    LastName = fields[3],
                 });
             }
         }

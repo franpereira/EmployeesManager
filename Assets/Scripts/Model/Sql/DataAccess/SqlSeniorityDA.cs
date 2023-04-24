@@ -20,7 +20,7 @@ namespace Employees.Model.Sql.DataAccess
             return GetFromCacheOrDb(id, () => new Seniority()
             {
                 Id = id,
-                Position = _positionDA.Get(r.GetInt32(r.GetOrdinal(POSITION_ID))),
+                Position = _positionDA.Get(r.GetInt32(r.GetOrdinal(SENIORITY_POSITION_ID))),
                 Name = r.GetString(r.GetOrdinal(SENIORITY_NAME)),
                 Ordinal = r.GetInt32(r.GetOrdinal(SENIORITY_ORDINAL)),
                 BaseSalary = r.GetDouble(r.GetOrdinal(SENIORITY_BASE_SALARY)),
@@ -43,7 +43,7 @@ namespace Employees.Model.Sql.DataAccess
 
         public void Add(Seniority entity) => NonQuery(
             $"INSERT INTO {SENIORITY_TABLE}" +
-            $"{SENIORITY_POSITION_ID}, {SENIORITY_NAME}, {SENIORITY_ORDINAL}, {SENIORITY_BASE_SALARY}, {SENIORITY_PERCENTAGE_PER_INCREMENT}, {SENIORITY_CURRENT_INCREMENTS}) VALUES " +
+            $"({SENIORITY_POSITION_ID}, {SENIORITY_NAME}, {SENIORITY_ORDINAL}, {SENIORITY_BASE_SALARY}, {SENIORITY_PERCENTAGE_PER_INCREMENT}, {SENIORITY_CURRENT_INCREMENTS}) VALUES " +
             $"(@positionId, @name, @ordinal, @baseSalary, @percentagePerIncrement, @currentIncrements)" +
             $"ON CONFLICT ({SENIORITY_ID}) DO UPDATE SET " +
             $"{SENIORITY_POSITION_ID} = @positionId, {SENIORITY_NAME} = @name, {SENIORITY_ORDINAL} = @ordinal, {SENIORITY_BASE_SALARY} = @baseSalary, {SENIORITY_PERCENTAGE_PER_INCREMENT} = @percentagePerIncrement, {SENIORITY_CURRENT_INCREMENTS} = @currentIncrements",

@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Employees.UI
+namespace Employees.UI.Positions
 {
     public class PositionEditorUI : MonoBehaviour, IPositionEditorUI
     {

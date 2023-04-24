@@ -1,10 +1,9 @@
 using System;
 using Employees.Model;
 using Employees.Model.DataAccess;
-using Employees.UI;
-using UnityEngine;
+using Employees.UI.Positions;
 
-namespace Employees.Presenters
+namespace Employees.Presenters.Positions
 {
     public class PositionEditorPresenter
     {
@@ -34,7 +33,7 @@ namespace Employees.Presenters
             }
         }
 
-        public void SavePosition()
+        void SavePosition()
         {
             _position.Name = _ui.Name;
             

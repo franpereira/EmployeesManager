@@ -1,14 +1,14 @@
 using System;
 
-namespace Employees.UI
+namespace Employees.UI.Positions
 {
     public interface IPositionEditorUI
     {
         public event Action SavePositionSelected;
         
         public string Name { get; set; }
-
-        void ShowUI();
-        void HideUI();
+        
+        public void ShowUI();
+        public void HideUI();
     }
 }

@@ -4,6 +4,7 @@ namespace Employees.UI
 {
     public interface IMainMenuUI
     {
-        event Action PositionsSelected; 
+        event Action PositionsSelected;
+        event Action SenioritiesSelected;
     }
 }

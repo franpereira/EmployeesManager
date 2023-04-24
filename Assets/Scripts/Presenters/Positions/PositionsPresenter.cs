@@ -1,10 +1,7 @@
-using System.Collections.Generic;
-using Employees.Model;
 using Employees.Model.DataAccess;
-using Employees.UI;
-using UnityEngine;
+using Employees.UI.Positions;
 
-namespace Employees.Presenters
+namespace Employees.Presenters.Positions
 {
     public class PositionsPresenter
     {
@@ -18,21 +15,15 @@ namespace Employees.Presenters
             _ui = ui;
             _ui.EditPositionRequested += OnEditPositionRequested;
             _editorPresenter = editorPresenter;
-            _editorPresenter.DataSaved += LoadPositions;
-            InitializeUI();
+            _editorPresenter.DataSaved += LoadAllPositions;
+            LoadAllPositions();
         }
         
         void OnEditPositionRequested(int id)
         {
             _editorPresenter.LoadPosition(id);
         }
-
-        void InitializeUI()
-        {
-            Debug.Log("Positions UI initialized");
-            LoadPositions();
-        }
         
-        public void LoadPositions() => _ui.LoadPositions(_repository.Positions.GetAll());
+        public void LoadAllPositions() => _ui.LoadPositions(_repository.Positions.GetAll());
     }
 }

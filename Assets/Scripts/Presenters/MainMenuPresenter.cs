@@ -1,19 +1,26 @@
+using Employees.Presenters.Seniorities;
 using Employees.UI;
+using Employees.UI.Positions;
+using Employees.UI.Seniorities;
 
 namespace Employees.Presenters
 {
     public class MainMenuPresenter
     {
         readonly IMainMenuUI _ui;
-        IPositionsUI _positionsUI;
+        readonly IPositionsUI _positionsUI;
+        readonly SenioritiesPresenter _senioritiesPresenter;
 
-        public MainMenuPresenter(IMainMenuUI ui, IPositionsUI positionsUI)
+        public MainMenuPresenter(IMainMenuUI ui, IPositionsUI positionsUI, SenioritiesPresenter senioritiesPresenter)
         {
             _ui = ui;
-            _positionsUI = positionsUI;
             _ui.PositionsSelected += OnPositionsSelected;
+            _ui.SenioritiesSelected += OnSenioritiesSelected;
+            _positionsUI = positionsUI;
+            _senioritiesPresenter = senioritiesPresenter;
         }
 
         void OnPositionsSelected() => _positionsUI.ShowUI();
+        void OnSenioritiesSelected() => _senioritiesPresenter.LoadAllSeniorities();
     }
 }
