@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Employees.Model;
 using UnityEngine;
 
 namespace Employees.UI.Positions
@@ -18,20 +17,17 @@ namespace Employees.UI.Positions
 
         public void OnEditPositionRequested(int id) => EditPositionRequested?.Invoke(id);
 
-        public void LoadPositions(IEnumerable<Position> positions)
+        public void AddPosition(string positionName, int seniorityCount, int employeesCount)
         {
-            Clear();
-            foreach (var position in positions)
-            {
-                PositionRow row = Instantiate(positionRowPrefab, rowsParent);
-                row.Name = position.Name;
-                row.Id = position.Id;
-                row.EditButtonClicked += OnEditPositionRequested;
-                _currentRows.Add(row);
-            }
+            PositionRow row = Instantiate(positionRowPrefab, rowsParent);
+            row.Name = positionName;
+            row.SeniorityCount = seniorityCount;
+            row.EmployeesCount = employeesCount;
+            row.EditButtonClicked += OnEditPositionRequested;
+            _currentRows.Add(row);
         }
 
-        void Clear()
+        public void Clear()
         {
             foreach (var row in _currentRows)
             {

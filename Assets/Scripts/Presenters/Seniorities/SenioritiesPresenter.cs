@@ -1,5 +1,5 @@
+using System.Linq;
 using Employees.Model.DataAccess;
-using Employees.Presenters.Positions;
 using Employees.UI.Seniorities;
 
 namespace Employees.Presenters.Seniorities
@@ -17,7 +17,15 @@ namespace Employees.Presenters.Seniorities
         
         public void LoadAllSeniorities()
         {
-            _ui.LoadSeniorities(_repository.Seniorities.GetAll());
+            _ui.Clear();
+            var seniorities = _repository.Seniorities.GetAll();
+            foreach (var seniority in seniorities)
+            {
+                int employeesCount = _repository.Employees.GetBySeniority(seniority).Count(); // Having a CountBySeniority() could be better?
+                _ui.AddSeniority(seniority.Name, seniority.Position.Name, employeesCount, seniority.BaseSalary, seniority.PercentagePerIncrement,
+                    seniority.CurrentIncrements, seniority.Salary);
+            }
+                
             _ui.ShowUI();
         }
     }

@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using Employees.Model;
 
 namespace Employees.UI.Positions
 {
@@ -8,7 +6,8 @@ namespace Employees.UI.Positions
     {
         public event Action<int> EditPositionRequested;
 
-        public void LoadPositions(IEnumerable<Position> positions);
+        public void AddPosition(string positionName, int seniorityCount, int employeesCount);
+        public void Clear();
         
         public void ShowUI();
         public void HideUI();

@@ -1,7 +1,6 @@
 using Employees.Presenters.Seniorities;
 using Employees.UI;
 using Employees.UI.Positions;
-using Employees.UI.Seniorities;
 
 namespace Employees.Presenters
 {

@@ -1,3 +1,4 @@
+using System.Linq;
 using Employees.Model.DataAccess;
 using Employees.UI.Positions;
 
@@ -24,6 +25,16 @@ namespace Employees.Presenters.Positions
             _editorPresenter.LoadPosition(id);
         }
         
-        public void LoadAllPositions() => _ui.LoadPositions(_repository.Positions.GetAll());
+        public void LoadAllPositions()
+        {
+            _ui.Clear();
+            var positions = _repository.Positions.GetAll();
+            foreach (var position in positions)
+            {
+                int seniorityCount = _repository.Seniorities.GetByPosition(position).Count();
+                int employeesCount = _repository.Employees.GetByPosition(position).Count();
+                _ui.AddPosition(position.Name, seniorityCount, employeesCount);
+            }
+        }
     }
 }
