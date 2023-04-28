@@ -17,7 +17,6 @@ namespace Employees.Presenters.Positions
             _ui.EditPositionRequested += OnEditPositionRequested;
             _editorPresenter = editorPresenter;
             _editorPresenter.DataSaved += LoadAllPositions;
-            LoadAllPositions();
         }
         
         void OnEditPositionRequested(int id)
@@ -35,6 +34,7 @@ namespace Employees.Presenters.Positions
                 int employeesCount = _repository.Employees.GetByPosition(position).Count();
                 _ui.AddPosition(position.Name, seniorityCount, employeesCount);
             }
+            _ui.ShowUI();
         }
     }
 }

@@ -13,16 +13,6 @@ namespace Employees.UI.Seniorities
 
         public void HideUI() => gameObject.SetActive(false);
 
-        public void Clear()
-        {
-            foreach (var row in _currentRows)
-            {
-                Destroy(row.gameObject);
-            }
-
-            _currentRows.Clear();
-        }
-
         public void AddSeniority(string seniorityName, string positionName, int employeesCount, double baseSalary,
                 double percentagePerIncrement, int currentIncrements, double salary)
         {
@@ -35,6 +25,13 @@ namespace Employees.UI.Seniorities
             row.CurrentIncrements = currentIncrements;
             row.Salary = salary;
             _currentRows.Add(row);
+        }
+
+        public void Clear()
+        {
+            foreach (var row in _currentRows) Destroy(row.gameObject);
+
+            _currentRows.Clear();
         }
     }
 }

@@ -27,6 +27,26 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 7337544871105554839, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
+      propertyPath: m_margin.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337544871105554839, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
+      propertyPath: m_margin.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337544871105554839, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
+      propertyPath: m_margin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337544871105554839, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
+      propertyPath: m_margin.z
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337544871105554839, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8416191740765834333, guid: 1d9585d7c2ecd9a4e8b5d8a8f8eb8361, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

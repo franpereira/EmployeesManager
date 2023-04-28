@@ -7,8 +7,10 @@ namespace Employees.UI
     {
         public event Action PositionsSelected;
         public event Action SenioritiesSelected;
+        public event Action EmployeesSelected;
 
         public void OnPositionsSelected() => PositionsSelected?.Invoke();
         public void OnSenioritiesSelected() => SenioritiesSelected?.Invoke();
+        public void OnEmployeesSelected() => EmployeesSelected?.Invoke();
     }
 }

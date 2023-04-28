@@ -6,5 +6,6 @@ namespace Employees.UI
     {
         event Action PositionsSelected;
         event Action SenioritiesSelected;
+        event Action EmployeesSelected;
     }
 }

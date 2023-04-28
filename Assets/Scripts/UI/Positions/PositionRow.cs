@@ -10,7 +10,6 @@ namespace Employees.UI.Positions
         [SerializeField] TextMeshProUGUI nameText;
         [SerializeField] TextMeshProUGUI seniorityCountText;
         [SerializeField] TextMeshProUGUI employeesCountText;
-        [SerializeField] Button editButton;
 
         int _positionId;
         
@@ -35,9 +34,6 @@ namespace Employees.UI.Positions
             get => int.Parse(employeesCountText.text);
             set => employeesCountText.text = value.ToString();
         }
-
-        void Start() => editButton.onClick.AddListener(OnEditButtonClicked);
-
         void OnEditButtonClicked() => EditButtonClicked?.Invoke(Id);
     }
 }

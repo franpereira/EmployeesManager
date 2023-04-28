@@ -6,10 +6,9 @@ namespace Employees.UI.Positions
     {
         public event Action<int> EditPositionRequested;
 
-        public void AddPosition(string positionName, int seniorityCount, int employeesCount);
-        public void Clear();
-        
         public void ShowUI();
         public void HideUI();
+        public void AddPosition(string positionName, int seniorityCount, int employeesCount);
+        public void Clear();
     }
 }
