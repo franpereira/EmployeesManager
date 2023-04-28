@@ -121,6 +121,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seniority Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Seniority
@@ -258,6 +278,26 @@ PrefabInstance:
     - target: {fileID: 5480861057180754196, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Position Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
@@ -397,6 +437,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Last Name Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Last Name
@@ -533,6 +593,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salary Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Salary
@@ -596,6 +676,26 @@ PrefabInstance:
     - target: {fileID: 1602821254619965218, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
       propertyPath: m_fontSizeMax
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6264336296990479789, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
       propertyPath: m_Name

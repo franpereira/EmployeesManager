@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Employees.UI.Employees
+namespace Employees.UI.Unity.Employees
 {
     public class EmployeeRow : MonoBehaviour
     {

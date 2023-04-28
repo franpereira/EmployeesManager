@@ -6,9 +6,10 @@ using Employees.Presenters.Positions;
 using Employees.Presenters.Seniorities;
 using Employees.Services.Database;
 using Employees.UI;
-using Employees.UI.Employees;
-using Employees.UI.Positions;
-using Employees.UI.Seniorities;
+using Employees.UI.Unity;
+using Employees.UI.Unity.Employees;
+using Employees.UI.Unity.Positions;
+using Employees.UI.Unity.Seniorities;
 using UnityEngine;
 
 namespace Employees
@@ -33,11 +34,10 @@ namespace Employees
             SqliteDatabase db = sqliteCreator.Create(databaseFilePath, forceNewDatabase);
             IDataRepository repository = new SqlDataRepository(db.NewConnection);
 
-            PositionEditorPresenter positionEditorPresenter = new(positionEditorUI, repository);
-            PositionsPresenter positionsPresenter = new(repository, positionsUI, positionEditorPresenter);
-            SenioritiesPresenter senioritiesPresenter = new(repository, senioritiesUI);
             EmployeesPresenter employeesPresenter = new(repository, employeesUI);
-
+            SenioritiesPresenter senioritiesPresenter = new(repository, senioritiesUI, employeesPresenter);
+            PositionEditorPresenter positionEditorPresenter = new(positionEditorUI, repository);
+            PositionsPresenter positionsPresenter = new(repository, positionsUI, positionEditorPresenter, senioritiesPresenter, employeesPresenter);
 
             MainMenuPresenter mainMenuPresenter = new(mainMenuUI, positionsPresenter, senioritiesPresenter, employeesPresenter);
         }

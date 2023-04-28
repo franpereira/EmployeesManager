@@ -107,6 +107,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Employees Count Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1682375659}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEmployeesButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Employees.UI.Unity.Seniorities.SeniorityRow, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Employees Count
@@ -221,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4443292595739418089, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_fontSize
-      value: 48
+      value: 45.1
       objectReference: {fileID: 0}
     - target: {fileID: 4443292595739418089, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_fontSizeMax
@@ -230,6 +258,26 @@ PrefabInstance:
     - target: {fileID: 5480861057180754196, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Base Salary Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
@@ -357,6 +405,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salary Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Salary
@@ -477,6 +545,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Name Text
       objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Name Field
@@ -591,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4443292595739418089, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_fontSize
-      value: 42.3
+      value: 35.65
       objectReference: {fileID: 0}
     - target: {fileID: 4443292595739418089, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_fontSizeMax
@@ -600,6 +688,26 @@ PrefabInstance:
     - target: {fileID: 5480861057180754196, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Percentage Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
@@ -670,6 +778,26 @@ PrefabInstance:
     - target: {fileID: 1602821254619965218, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
       propertyPath: m_fontSizeMax
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936516621786885915, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6264336296990479789, guid: 86fbe3f1b44d0464ba9605ece956cb7a, type: 3}
       propertyPath: m_Name
@@ -911,6 +1039,26 @@ PrefabInstance:
     - target: {fileID: 5480861057180754196, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name
       value: Current Increments Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788031443737859536, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9041124477534891878, guid: d4d59afd6693c644d81d20bfea29fd6d, type: 3}
       propertyPath: m_Name

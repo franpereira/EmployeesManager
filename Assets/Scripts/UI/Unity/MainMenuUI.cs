@@ -1,9 +1,10 @@
 using System;
+using Employees.UI.Interfaces;
 using UnityEngine;
 
-namespace Employees.UI
+namespace Employees.UI.Unity
 {
-    public class MainMenuUI : MonoBehaviour, IMainMenuUI
+    public class MainMenuUI : ViewUI, IMainMenuUI
     {
         public event Action PositionsSelected;
         public event Action SenioritiesSelected;

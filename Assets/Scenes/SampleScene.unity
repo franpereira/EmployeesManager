@@ -2186,6 +2186,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1283904752}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RequestBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Employees.UI.Unity.ViewUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
 --- !u!224 &1283904748 stripped
@@ -2324,6 +2340,22 @@ PrefabInstance:
     - target: {fileID: 2117019532822757199, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1319800662}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RequestBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Employees.UI.Unity.ViewUI, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
@@ -3044,6 +3076,22 @@ PrefabInstance:
     - target: {fileID: 2117019532822757199, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 749395275}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RequestBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071369841471836344, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Employees.UI.Unity.ViewUI, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5aed8ee98bd8e48be211e7d271bdfa, type: 3}

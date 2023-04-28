@@ -1,7 +1,8 @@
+using System;
 using TMPro;
 using UnityEngine;
 
-namespace Employees.UI.Seniorities
+namespace Employees.UI.Unity.Seniorities
 {
     public class SeniorityRow : MonoBehaviour
     {
@@ -13,6 +14,10 @@ namespace Employees.UI.Seniorities
         [SerializeField] TextMeshProUGUI currentIncrementsText;
         [SerializeField] TextMeshProUGUI salaryText;
 
+        public event Action<int> EmployeesButtonClicked;
+        
+        public int Id { get; set; }
+        
         public string PositionName
         {
             get => positionNameText.text;
@@ -54,5 +59,7 @@ namespace Employees.UI.Seniorities
             get => double.Parse(salaryText.text);
             set => salaryText.text = value.ToString("C");
         }
+        
+        public void OnEmployeesButtonClicked() => EmployeesButtonClicked?.Invoke(Id);
     }
 }

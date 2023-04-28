@@ -1,22 +1,23 @@
+using System;
 using System.Collections.Generic;
+using Employees.UI.Interfaces.Seniorities;
 using UnityEngine;
 
-namespace Employees.UI.Seniorities
+namespace Employees.UI.Unity.Seniorities
 {
-    public class SenioritiesUI : MonoBehaviour, ISenioritiesUI
+    public class SenioritiesUI : ViewUI, ISenioritiesUI
     {
         [SerializeField] SeniorityRow seniorityRowPrefab;
         [SerializeField] Transform rowsParent;
         readonly List<SeniorityRow> _currentRows = new();
+        
+        public event Action<int> EmployeesRequested;
 
-        public void ShowUI() => gameObject.SetActive(true);
-
-        public void HideUI() => gameObject.SetActive(false);
-
-        public void AddSeniority(string seniorityName, string positionName, int employeesCount, double baseSalary,
+        public void AddSeniority(int id, string seniorityName, string positionName, int employeesCount, double baseSalary,
                 double percentagePerIncrement, int currentIncrements, double salary)
         {
             SeniorityRow row = Instantiate(seniorityRowPrefab, rowsParent);
+            row.Id = id;
             row.Name = seniorityName;
             row.PositionName = positionName;
             row.EmployeesCount = employeesCount;
@@ -24,12 +25,17 @@ namespace Employees.UI.Seniorities
             row.PercentagePerIncrement = percentagePerIncrement;
             row.CurrentIncrements = currentIncrements;
             row.Salary = salary;
+            row.EmployeesButtonClicked += OnEmployeesRequested;
             _currentRows.Add(row);
         }
 
+        void OnEmployeesRequested(int seniorityId) => EmployeesRequested?.Invoke(seniorityId);
+        
         public void Clear()
         {
-            foreach (var row in _currentRows) Destroy(row.gameObject);
+            foreach (var row in _currentRows)
+                if (row != null)
+                    Destroy(row.gameObject);
 
             _currentRows.Clear();
         }

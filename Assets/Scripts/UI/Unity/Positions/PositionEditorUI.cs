@@ -1,9 +1,10 @@
 using System;
+using Employees.UI.Interfaces.Positions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Employees.UI.Positions
+namespace Employees.UI.Unity.Positions
 {
     public class PositionEditorUI : MonoBehaviour, IPositionEditorUI
     {

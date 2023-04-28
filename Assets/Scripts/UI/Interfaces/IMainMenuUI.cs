@@ -1,8 +1,8 @@
 using System;
 
-namespace Employees.UI
+namespace Employees.UI.Interfaces
 {
-    public interface IMainMenuUI
+    public interface IMainMenuUI : IViewUI
     {
         event Action PositionsSelected;
         event Action SenioritiesSelected;

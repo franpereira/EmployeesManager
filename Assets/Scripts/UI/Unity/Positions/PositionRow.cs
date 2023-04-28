@@ -1,9 +1,8 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace Employees.UI.Positions
+namespace Employees.UI.Unity.Positions
 {
     public class PositionRow : MonoBehaviour
     {
@@ -14,6 +13,8 @@ namespace Employees.UI.Positions
         int _positionId;
         
         public event Action<int> EditButtonClicked;
+        public event Action<int> SenioritiesButtonClicked; 
+        public event Action<int> EmployeesButtonClicked;
         
         public int Id { get; set; }
         
@@ -34,6 +35,7 @@ namespace Employees.UI.Positions
             get => int.Parse(employeesCountText.text);
             set => employeesCountText.text = value.ToString();
         }
-        void OnEditButtonClicked() => EditButtonClicked?.Invoke(Id);
+        public void OnSenioritiesButtonClicked() => SenioritiesButtonClicked?.Invoke(Id);
+        public void OnEmployeesButtonClicked() => EmployeesButtonClicked?.Invoke(Id);
     }
 }

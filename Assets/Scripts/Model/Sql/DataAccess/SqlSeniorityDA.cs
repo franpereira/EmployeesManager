@@ -37,7 +37,7 @@ namespace Employees.Model.Sql.DataAccess
         );
 
         public IEnumerable<Seniority> GetByPosition(Position position) => QueryAllBy(
-            $"SELECT * FROM {SENIORITY_TABLE} WHERE {POSITION_ID} = @positionId",
+            $"SELECT * FROM {SENIORITY_TABLE} WHERE {SENIORITY_POSITION_ID} = @positionId",
             cmd => { cmd.AddParameter("@positionId", position.Id); }
         );
 

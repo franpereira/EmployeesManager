@@ -1,8 +1,7 @@
 using Employees.Presenters.Employees;
 using Employees.Presenters.Positions;
 using Employees.Presenters.Seniorities;
-using Employees.UI;
-using Employees.UI.Positions;
+using Employees.UI.Interfaces;
 
 namespace Employees.Presenters
 {
@@ -25,7 +24,9 @@ namespace Employees.Presenters
         }
 
         void OnPositionsSelected() => _positionsPresenter.LoadAllPositions();
+
         void OnSenioritiesSelected() => _senioritiesPresenter.LoadAllSeniorities();
+
         void OnEmployeesSelected() => _employeesPresenter.LoadAllEmployees();
     }
 }

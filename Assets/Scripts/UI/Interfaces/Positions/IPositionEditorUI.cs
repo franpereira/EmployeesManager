@@ -1,6 +1,6 @@
 using System;
 
-namespace Employees.UI.Positions
+namespace Employees.UI.Interfaces.Positions
 {
     public interface IPositionEditorUI
     {

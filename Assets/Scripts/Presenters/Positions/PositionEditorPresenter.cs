@@ -1,7 +1,7 @@
 using System;
 using Employees.Model;
 using Employees.Model.DataAccess;
-using Employees.UI.Positions;
+using Employees.UI.Interfaces.Positions;
 
 namespace Employees.Presenters.Positions
 {
