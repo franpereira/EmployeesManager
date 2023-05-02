@@ -10,6 +10,8 @@ namespace Employees.UI.Unity.Employees
         [SerializeField] EmployeeRow employeeRowPrefab;
         [SerializeField] Transform rowsParent;
         readonly List<EmployeeRow> _currentRows = new();
+        
+        public event Action<string> SortRequested;
 
         public void AddEmployee(string firstName, string lastName, string seniorityName, string positionName, double salary)
         {
@@ -28,5 +30,11 @@ namespace Employees.UI.Unity.Employees
                 if (row != null)
                     Destroy(row.gameObject);
         }
+        
+        public void SortByFirstName() => SortRequested?.Invoke("FirstName");
+        public void SortByLastName() => SortRequested?.Invoke("LastName");
+        public void SortBySeniority() => SortRequested?.Invoke("Seniority");
+        public void SortByPosition() => SortRequested?.Invoke("Position");
+        public void SortBySalary() => SortRequested?.Invoke("Salary");
     }
 }
