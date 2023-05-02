@@ -14,6 +14,8 @@ namespace Employees.UI.Unity.Positions
         public event Action<int> EditPositionRequested;
         public event Action<int> SenioritiesRequested;
         public event Action<int> EmployeesRequested;
+        
+        public event Action<string> SortRequested; 
 
         public void OnEditPositionRequested(int id) => EditPositionRequested?.Invoke(id);
 
@@ -43,5 +45,7 @@ namespace Employees.UI.Unity.Positions
             }
             _currentRows.Clear();
         }
+        
+        public void SortByName() => SortRequested?.Invoke("Name");
     }
 }

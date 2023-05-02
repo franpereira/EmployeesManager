@@ -1,7 +1,7 @@
 using System.Data;
 using Mono.Data.Sqlite;
 
-namespace Employees.Services.Database
+namespace Employees.Utilities.Database
 {
     public class SqliteDatabase : IDatabase
     {

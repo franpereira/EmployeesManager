@@ -1,4 +1,4 @@
-﻿namespace Employees.Services.Sorting
+﻿namespace Employees.Utilities.Sorting
 {
     public enum EmployeesSortType
     {

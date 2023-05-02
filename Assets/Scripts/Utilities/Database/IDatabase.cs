@@ -1,6 +1,6 @@
 using System.Data;
 
-namespace Employees.Services.Database
+namespace Employees.Utilities.Database
 {
     public interface IDatabase
         {

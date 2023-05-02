@@ -6,7 +6,7 @@ using Mono.Data.Sqlite;
 using UnityEngine;
 using static Employees.Model.Sql.DbIdentifiers;
 
-namespace Employees.Services.Database
+namespace Employees.Utilities.Database
 {
     public class SqliteCreator
     {

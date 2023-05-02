@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using Employees.Model;
 using Employees.Model.DataAccess;
-using Employees.Services.Sorting;
 using Employees.UI.Interfaces.Employees;
+using Employees.Utilities.Sorting;
 using UnityEngine;
 
 namespace Employees.Presenters.Employees
@@ -62,20 +62,20 @@ namespace Employees.Presenters.Employees
 
         void Sort(string sortType)
         {
-            if (Enum.TryParse<EmployeesSortType>(sortType, out var type))
+            if (Enum.TryParse<EmployeesSortType>(sortType, out var parsedType))
             {
-                if (_currentSortType == type)
+                if (_currentSortType == parsedType)
                     _isSortedAscending = !_isSortedAscending;
                 else
                 {
-                    _currentSortType = type;
-                    _isSortedAscending = true;   
+                    _currentSortType = parsedType;
+                    _isSortedAscending = true;
                 }
 
-                Load(_sorter.SortEmployees(_currentEmployees, type, _isSortedAscending));
+                Load(_sorter.SortEmployees(_currentEmployees, parsedType, _isSortedAscending));
             }
             else
-                Debug.LogError($"EmployeesSortType {sortType} enum value does not exist");
+                Debug.LogError($"EmployeesSortType enum value {sortType} does not exist");
         }
     }
 }

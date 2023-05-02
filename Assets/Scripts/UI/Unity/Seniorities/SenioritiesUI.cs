@@ -12,6 +12,7 @@ namespace Employees.UI.Unity.Seniorities
         readonly List<SeniorityRow> _currentRows = new();
         
         public event Action<int> EmployeesRequested;
+        public event Action<string> SortRequested;
 
         public void AddSeniority(int id, string seniorityName, string positionName, int employeesCount, double baseSalary,
                 double percentagePerIncrement, int currentIncrements, double salary)
@@ -39,5 +40,12 @@ namespace Employees.UI.Unity.Seniorities
 
             _currentRows.Clear();
         }
+        
+        public void SortByOrdinal() => SortRequested?.Invoke("Ordinal");
+        public void SortByPosition() => SortRequested?.Invoke("Position");
+        public void SortByBaseSalary() => SortRequested?.Invoke("BaseSalary");
+        public void SortByPercentagePerIncrement() => SortRequested?.Invoke("PercentagePerIncrement");
+        public void SortByCurrentIncrements() => SortRequested?.Invoke("CurrentIncrements");
+        public void SortBySalary() => SortRequested?.Invoke("Salary");
     }
 }
